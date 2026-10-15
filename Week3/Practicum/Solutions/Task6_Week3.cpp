@@ -12,6 +12,7 @@ int main()
     if (n == 1)
     {
         cout << a << endl;
+        return 0;
     }
 
     int i = 2;
