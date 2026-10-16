@@ -4,7 +4,7 @@
 
 - [Какво е цикъл?](#какво-е-цикъл)
 - [Оператори за цикъл](#оператори-за-цикъл)
-  - [for()](#for())
+  - [for()](#for)
   - [while](#while)
   - [do-while](#do-while)
   - [while vs. do-while](#while-vs-do-while)
