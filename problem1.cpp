@@ -7,11 +7,11 @@ int main(){
     int n=-1, m=-1;
 
     while(n<0){
-        std::cout<<"Enter a valid length of array 1";
+        std::cout<<"Enter a valid length of array 1"<<std::endl;
         std::cin>>n;
     }
     while(m<0){
-        std::cout<<"Enter a valid length of array 2";
+        std::cout<<"Enter a valid length of array 2"<<std::endl;
         std::cin>>m;
     }
 
