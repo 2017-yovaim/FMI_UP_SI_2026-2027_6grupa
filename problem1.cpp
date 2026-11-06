@@ -4,8 +4,16 @@ void readArray(int[], int);
 bool contains(const int a[], int n, const int b[], int m);
 
 int main(){
-    int n, m;
-    std::cin>>n>>m;
+    int n=-1, m=-1;
+
+    while(n<0){
+        std::cout<<"Enter a valid length of array 1";
+        std::cin>>n;
+    }
+    while(m<0){
+        std::cout<<"Enter a valid length of array 2";
+        std::cin>>m;
+    }
 
     int arr1[1024], arr2[1024];
     readArray(arr1, n);
@@ -21,6 +29,16 @@ void readArray(int arr[], int size){
 }
 
 bool contains(const int a[], int n, const int b[], int m){
+    if(n==0){
+        if(m==0){
+            return true;
+        }
+        return false;
+    }
+    if(m==0){
+        return true;
+    }
+
     int j = 0;
     for(int i=0; i<n; i++){
         if(a[i] == b[j]){
