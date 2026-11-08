@@ -21,7 +21,7 @@ int main()
         std::cout<<"Enter a valid index for the start of the subarray"<<std::endl;
         std::cin>>l;
     }
-    while(r <= l|| r >= n)
+    while(r < l|| r >= n)
     {
         std::cout<<"Enter a valid index for the end of the subarray"<<std::endl;
         std::cin>>r;
