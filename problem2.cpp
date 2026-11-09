@@ -36,16 +36,18 @@ int main()
     return 0;
 }
 
-void readArray(int arr[], int size){
+void readArray(int arr[], int size)
+{
     for(int i=0; i < size; i++)
     {
         std::cin>>arr[i];
     }
 }
 
-void displayArray(int arr[], int n){
+void displayArray(int arr[], int n)
+{
     for(int i=0; i<n; i++){
-        std::cout<<arr[i];
+        std::cout<<arr[i]<<" ";
     }
     std::cout<<std::endl;
 }
