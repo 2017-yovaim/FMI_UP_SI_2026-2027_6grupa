@@ -1,4 +1,3 @@
-[Tasks.md](https://github.com/user-attachments/files/34701578/Tasks.md)
 # Задачи за упражнение – двумерни масиви 
 
 ## Задача 1. Седлова точка
