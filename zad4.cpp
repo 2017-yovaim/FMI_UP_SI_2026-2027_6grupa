@@ -3,46 +3,50 @@
 void successful(int& operationCount)
 {
 	operationCount++;
-	
+
 }
 int calculations(int numberOfaction, double num1, double num2)
 {
+	int num1copy = num1;
 	int power = 0;
 	switch (numberOfaction)
 	{
 	case 1:
-		std::cout << "Result: "<<num1<<"+"<<num2 << " = "<<"\n";
+		std::cout << "Result: " << num1 << "+" << num2 << " = ";
 		return num1 + num2;
 		break;
 		;
 	case 2:
-		std::cout << "Result: "<<num1<<"-"<<num2 << " = " << "\n";
+		std::cout << "Result: " << num1 << "-" << num2 << " = ";
 		return num1 - num2;
 		break;
 	case 3:
-		std::cout << "Result: " << num1 << "*" << num2 << " = " << "\n";
+		std::cout << "Result: " << num1 << "*" << num2 << " = ";
 		return num1 * num2;
 		break;
 	case 4:
-	{
 		if (num2 == 0)
 		{
 			std::cout << "Error! You can not devide with 0!";
 		}
 		else
 		{
-			std::cout << "Result: " << num1 << "/" << num2 << " = " << "\n";
+			std::cout << "Result: " << num1 << "/" << num2 << " = ";
 			return num1 / num2;
 		}
-	}
-		break;
+	break;
 	case 5:
-		while (power<=num2)
+		if (num2 == 0)
+			num1 = 1;
+		else 
 		{
-			num1 *= num1;
-			power++;
+			while (power < num2-1)
+			{
+				num1 *= num1copy;
+				power++;
+			}	
 		}
-		std::cout << "Result: " << num1 << "^" << num2 << " = " << "\n";
+		std::cout << "Result: " << num1copy << "^" << num2 << " = ";
 		return num1;
 		break;
 	default: break;
@@ -57,8 +61,8 @@ int main()
 	std::cout << "4.Divide" << std::endl;
 	std::cout << "5.Pow" << std::endl;
 	std::cout << "Exit" << std::endl;
-	
-	int operationCount=0;
+
+	int operationCount = 0;
 	int numOfaction;
 	double number1, number2;
 	while (true)
@@ -68,7 +72,7 @@ int main()
 		std::cin >> numOfaction;
 		if (numOfaction < 1 || numOfaction>5)
 		{
-			std::cout << "Number of successful actions: "<<operationCount;
+			std::cout << "Number of successful actions: " << operationCount;
 			break;
 		}
 		std::cout << "Enter your first number: ";
@@ -79,7 +83,7 @@ int main()
 		{
 			successful(operationCount);
 		}
-		std::cout<<calculations(numOfaction, number1, number2);
+		std::cout << calculations(numOfaction, number1, number2);
 	}
-	
+
 }
