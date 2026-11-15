@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="UP_Domashno 4/UP_Domashno 4.vcxproj" />
+</Solution>
