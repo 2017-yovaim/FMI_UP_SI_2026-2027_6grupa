@@ -154,9 +154,9 @@ double calculatePrice(int quantity, double unitPrice, bool isVIP);
 ```
 20
 10.50
-15 0
-25 1 0
-5 1 1
+0 15 0
+1 25 0
+1 5 1
 ```
 
 **Изход:**
