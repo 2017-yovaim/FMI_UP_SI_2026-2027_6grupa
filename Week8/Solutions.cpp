@@ -1,6 +1,5 @@
-# Задача 1
+//Задача 1
 
-```cpp
 #include <iostream>
 using namespace std;
 
@@ -12,11 +11,9 @@ int main() {
     cout << ((n >> k) & 1) << endl;
     return 0;
 }
-```
 
-# Задача 2
+//Задача 2
 
-```cpp
 #include <iostream>
 using namespace std;
 
@@ -32,11 +29,10 @@ int main() {
          << (n ^ mask) << endl;
     return 0;
 }
-```
+
 
 # Задача 3
 
-```cpp
 #include <iostream>
 using namespace std;
 
@@ -53,11 +49,10 @@ int main() {
     cout << count << endl;
     return 0;
 }
-```
 
-# Задача 4
 
-```cpp
+//Задача 4
+
 #include <iostream>
 using namespace std;
 
@@ -74,11 +69,9 @@ int main() {
     cout << result << endl;
     return 0;
 }
-```
 
-# Задача 5
+//Задача 5
 
-```cpp
 #include <iostream>
 using namespace std;
 
@@ -96,11 +89,9 @@ int main() {
     cout << result << endl;
     return 0;
 }
-```
 
-# Задача 6
+//Задача 6
 
-```cpp
 #include <iostream>
 using namespace std;
 
@@ -132,4 +123,3 @@ int main() {
     cout << count << endl;
     return 0;
 }
-```
