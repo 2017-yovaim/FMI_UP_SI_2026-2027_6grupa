@@ -83,16 +83,17 @@ void rareElements(int matrix[][], int rows, int cols);
 ```
 5 5 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7
 ```
-
 Матрица:
 
-```
-1 2 3 4 5
-$\color{red}{\text{6 7 8}}$ 9 1
-$\color{red}{\text{2 3 4}}$ 5 6
-$\color{red}{\text{7 8 9}}$ 1 2
-3 4 5 6 7
-```
+$$
+\begin{array}{ccccc}
+1 & 2 & 3 & 4 & 5 \\
+\color{red}{6} & \color{red}{7} & \color{red}{8} & 9 & 1 \\
+\color{red}{2} & \color{red}{3} & \color{red}{4} & 5 & 6 \\
+\color{red}{7} & \color{red}{8} & \color{red}{9} & 1 & 2 \\
+3 & 4 & 5 & 6 & 7
+\end{array}
+$$
 
 Изход:
 
